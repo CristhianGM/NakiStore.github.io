@@ -1,0 +1,270 @@
+*,body{
+    font-family: "Rethink Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    overflow: hidden;
+    position: relative;
+}
+.logo h1{
+    font-size: 1rem;
+    font-weight: 800;
+    font-style: italic;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: solid 1px black;
+}
+.iconos-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconos-header a{
+    text-decoration: none;
+    padding: 10px;
+}
+i{
+    color: black;
+}
+.buscador{
+    width: 100%;
+    background-color: white;
+    margin-left: 35px;
+    position: absolute;
+    
+}
+.buscador input{
+    border: none;
+    display: inline-block;
+    padding: 10px 0;
+    outline: none;
+}
+
+
+/* -----------------------banner--------------------- */
+.banner{
+    position: relative;
+    width: 100%;
+}
+.imagen-banner img{
+    width: 100%;
+    display: block;
+}
+.primera-linea {
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    /* border: solid 1px black; */
+}
+.segunda-linea {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+}
+/* -----------------------------NOVEDADES---------------------- */
+.contenedor-novedades{
+    width: 100%;
+    /* border: solid 1px black; */
+}
+.titulo-novedades{
+    text-align: center;
+    margin: 20px 0;
+}
+.coleccion-novedades{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-novedades{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.imagen-novedades img{
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+}
+.imagen-novedades a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.05rem;
+    padding:10px;
+    border: none;
+    background-color: white;
+    position: absolute;
+    top: 80%;
+    transition: color 0.3s ease;
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+}
+/* -----------------------BEST SELLER----------------------- */
+.contenedor-bestseller{
+    width: 100%;
+    /* border: solid 1px black; */
+}
+.titulo-bestseller{
+    text-align: center;
+    margin: 20px 0;
+}
+.carrusel-bestseller{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+.coleccion-bestseller{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px black; */
+}
+.tarjeta-bestseller{
+    width: 300px;
+    height: 420px;
+    padding: 10px;
+    /* border: solid 1px black; */
+}
+.tarjeta-bestseller img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+.ver-mas{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    /* text-decoration: none; */
+    color:black;
+    /* border: solid 1px black; */
+}
+/* -----------------------------OFERTA Y PROCIONES-------------------- */
+.contenedor-ofertas{
+    width: 100%;
+    /* border: solid 1px black; */
+}
+.titulo-ofertas{
+    text-align: center;
+    margin: 20px 0;
+}
+.carrusel-ofertas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+.coleccion-ofertas{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px black; */
+}
+.tarjeta-ofertas{
+    width: 300px;
+    height: 420px;
+    padding: 10px;
+    position: relative;
+    /* border: solid 1px black; */
+}
+.tarjeta-ofertas img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+.descuento{
+    position: absolute;
+    left: 80%;
+    top: 5%;
+    background-color: yellow;
+    border-radius: 50%;
+    padding:10px 5px;
+    font-weight: 600;
+}
+/* -------------------------------REGISTRO----------------------- */
+.contenedor-registro{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(133, 133, 133);
+}
+.registro span{
+    margin: 0 20px;
+    font-weight: 500;
+    color: white;
+}
+.registro input{
+    padding: 10px;
+    width: 350px;
+    border: none;
+}
+.metodos-pago{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 50px;
+}
+.metodos-pago img{
+    width: 70px;
+    margin: 0 20px;
+}
+
+
+/* ---------------------------FOOTER----------------------- */
+footer{
+    background-color: black;
+    width: 100%;
+    min-height: 200px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.lista{
+    margin-top: 30px;
+    padding: 0 40px;
+}
+.lista h3{
+    margin-bottom: 10px;
+}
+.lista li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.lista a{
+    color: white;
+    text-decoration: none;
+}
+.redes-sociales{
+    display: flex;
+}
+.lista img{
+    width: 24px;
+    height: 24px;
+    background-color: white; 
+    margin-right: 5px;
+}
